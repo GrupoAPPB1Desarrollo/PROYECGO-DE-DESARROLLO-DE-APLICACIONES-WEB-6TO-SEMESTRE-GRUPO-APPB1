@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculadora Web</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <section class="calc" aria-label="Calculadora">
+      <div class="pantalla">
+        <div id="expresion" class="expresion"></div>
+        <div id="resultado" class="resultado" aria-live="polite">0</div>
+      </div>
+      <div class="teclado">
+        <button data-accion="limpiar" class="fn">C</button>
+        <button data-accion="borrar" class="fn">⌫</button>
+        <button data-valor="%" class="op">%</button>
+        <button data-valor="/" class="op">÷</button>
+
+        <button data-valor="7">7</button><button data-valor="8">8</button><button data-valor="9">9</button>
+        <button data-valor="*" class="op">×</button>
+
+        <button data-valor="4">4</button><button data-valor="5">5</button><button data-valor="6">6</button>
+        <button data-valor="-" class="op">−</button>
+
+        <button data-valor="1">1</button><button data-valor="2">2</button><button data-valor="3">3</button>
+        <button data-valor="+" class="op">+</button>
+
+        <button data-valor="(" class="fn">(</button><button data-valor="0">0</button>
+        <button data-valor=".">.</button><button data-accion="igual" class="igual">=</button>
+
+        <button data-valor="^" class="fn">xʸ</button>
+        <button data-valor="sqrt(" class="fn">√</button>
+        <button data-valor=")" class="fn">)</button>
+        <button data-accion="signo" class="fn">±</button>
+      </div>
+    </section>
+
+    <aside class="historial">
+      <header><h2>Historial</h2><button id="borrarHistorial" class="link">Borrar</button></header>
+      <ul id="lista"></ul>
+    </aside>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

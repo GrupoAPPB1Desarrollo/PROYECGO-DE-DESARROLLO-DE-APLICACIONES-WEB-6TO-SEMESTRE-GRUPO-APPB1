@@ -1,0 +1,8 @@
+{
+  "name": "calculadora-web",
+  "version": "1.0.0",
+  "description": "Proyecto III - Calculadora web (backend Express + frontend HTML/CSS/JS)",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "dependencies": { "express": "^4.19.2" }
+}
